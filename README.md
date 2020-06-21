@@ -1,4 +1,29 @@
 # RoasterDB
-A mysql database for a rostery owner
+A mysql database for a roastery owner
 ## Plan działania
-Podzielimy sobie tę bazę na pliki dla przejrzystości. Będzie __main.sql__, który się będzie odpalało przy starcie pracy z projektem. Oprócz tego będą pliki typu __tablice.sql__ etc (będą ładowane przez maina).
+Podzielimy sobie tę bazę na pliki dla przejrzystości.
+
+__main.sql__ odpalamy na początku pracy z bazą po pobraniu commita. Tam są odpalane pozostałe pliki.
+Niestety nie udało mi się zrobić tego tak, żeby działało niezależnie od środowiska,
+więc każde z was będzie musiało wstawić dokładną ścieżkę do pliku w odpowiednim miejscu przy każdym zapytaniu `source` (jest zaznaczone w pliku).
+Dajcie znać jak będziecie mieli gotowe, to wywalę go ze śledzenia, żeby nie generował konfliktów.
+
+Wszystkie nasze zmiany wprowadzamy jako ciąg zapytań do odpowiedniego pliku.
+
+- **tables.sql** deklaracje tablic
+- **views.sql** deklaracje widoków
+- **funcs.sql** deklaracje funkcji
+- **users.sql** deklaracje użytkowników
+- **data.sql** wprowadzenie danych
+
+W miarę możliwości ładnie formatujcie kod. Piszcie jakby to były funkcje w jakimś języku programowania np.
+
+```
+create table roastery
+(
+	id int ... ,
+	name text ... ,
+	...
+)
+```
+wiecie o co chodzi.
