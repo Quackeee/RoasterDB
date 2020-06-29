@@ -6,7 +6,7 @@ create table farma
 	region char(30),
 	primary key(nazwa)
 )
-default character set utf8 collate utf8_unicode_ci
+default character set utf8 collate utf8_unicode_ci;
 
 create table ziarna
 (
@@ -16,15 +16,15 @@ create table ziarna
 	wysokosc_upraw int,
 	primary key(id_z)
 )
-default character set utf8 collate utf8_unicode_ci
-Query	create table palarnia
+default character set utf8 collate utf8_unicode_ci;
+create table palarnia
 (
 	nazwa char(40) not null,
 	wlasciciel char(40) not null,
 	budzet double not null,
 	primary key(nazwa)
 )
-default character set utf8 collate utf8_unicode_ci
+default character set utf8 collate utf8_unicode_ci;
 create table wypalone
 (
 	id_r int unsigned not null auto_increment,
@@ -38,7 +38,7 @@ create table wypalone
 	slodycz text,
 	primary key(id_r)
 )
-default character set utf8 collate utf8_unicode_ci
+default character set utf8 collate utf8_unicode_ci;
 create table paczka
 (
 	id_p int unsigned not null auto_increment,
@@ -46,4 +46,4 @@ create table paczka
 	cena double,
 	primary key(id_p)
 )
-default character set utf8 collate utf8_unicode_ci
+default character set utf8 collate utf8_unicode_ci;
