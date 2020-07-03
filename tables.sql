@@ -17,6 +17,7 @@ create table ziarna
 	primary key(id_z)
 )
 default character set utf8 collate utf8_unicode_ci;
+
 create table palarnia
 (
 	nazwa char(40) not null,
@@ -25,6 +26,7 @@ create table palarnia
 	primary key(nazwa)
 )
 default character set utf8 collate utf8_unicode_ci;
+
 create table wypalone
 (
 	id_r int unsigned not null auto_increment,
@@ -39,11 +41,37 @@ create table wypalone
 	primary key(id_r)
 )
 default character set utf8 collate utf8_unicode_ci;
+
 create table paczka
 (
 	id_p int unsigned not null auto_increment,
+	id_r int unsigned not null,
 	waga double not null,
 	cena double,
-	primary key(id_p)
+	primary key(id_p),
+	foreign key(id_r) references wypalone(id_r)
+)
+default character set utf8 collate utf8_unicode_ci;
+
+create table zbior
+(
+nazwa_farmy char(40) not null,
+id_z int unsigned not null,
+data datetime not null,
+foreign key (nazwa_farmy) references farma(nazwa),
+foreign key (id_z) references ziarna(id_z)
+)
+default character set utf8 collate utf8_unicode_ci;
+
+create table palenie(
+nazwa_palarni char(40) not null,
+id_z int unsigned not null,
+id_r int unsigned not null,
+stopien enum('jasne','średnie','ciemne'),
+obrobka enum('washed'),
+data datetime,
+foreign key(nazwa_palarni) references palarnia(nazwa),
+foreign key(id_z) references ziarna(id_z),
+foreign key(id_r) references wypalone(id_r)
 )
 default character set utf8 collate utf8_unicode_ci;
