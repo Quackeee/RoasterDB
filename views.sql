@@ -1,5 +1,5 @@
 create view moje_ziarna as
-select w.id_r ID, f.kraj kraj, f.region region, w.waga waga, w.jest_speciality speciality, punktacja, kwasowosc, slodycz, wady
+select w.id_r ID, f.kraj kraj, f.region region, pl.data 'data palenia', w.waga waga, w.jest_speciality speciality, punktacja, kwasowosc, slodycz, wady
 from wypalone w, palarnia plr, palenie pl, ziarna z, farma f, zbior zb
 where
 plr.wlasciciel = user() and
@@ -14,3 +14,9 @@ select nazwa, budzet
 from palarnia
 where
 wlasciciel = user();
+
+create view moje_paczki as
+select p.id_r ID, z.kraj kraj, z.region region, p.waga waga, concat(p.cena, 'zł') cena
+from paczka p, moje_ziarna z
+where
+p.id_r = z.ID;
