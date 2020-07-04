@@ -71,7 +71,7 @@ id_r int unsigned not null,
 stopien enum('jasne','średnie','ciemne'),
 obrobka enum('washed','natural','honey'),
 data datetime,
-primary key(id_z),
+primary key(id_r),
 foreign key(nazwa_palarni) references palarnia(nazwa),
 foreign key(id_z) references ziarna(id_z),
 foreign key(id_r) references wypalone(id_r)
