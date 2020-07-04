@@ -58,6 +58,7 @@ create table zbior
 nazwa_farmy char(40) not null,
 id_z int unsigned not null,
 data datetime not null,
+primary key (id_z),
 foreign key (nazwa_farmy) references farma(nazwa),
 foreign key (id_z) references ziarna(id_z)
 )
@@ -70,6 +71,7 @@ id_r int unsigned not null,
 stopien enum('jasne','średnie','ciemne'),
 obrobka enum('washed'),
 data datetime,
+primary key(id_z),
 foreign key(nazwa_palarni) references palarnia(nazwa),
 foreign key(id_z) references ziarna(id_z),
 foreign key(id_r) references wypalone(id_r)
