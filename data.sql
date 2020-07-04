@@ -53,3 +53,14 @@ insert into zbior values ("Tairora",17,'2019-04-06');
 insert into zbior values ("Adado",18,'2019-04-25');
 insert into zbior values ("Adame Garbota Cooperative",19,'2019-04-20');
 insert into zbior values ("Guji Jigesa Weysi",20,'2019-05-09');
+
+insert into palarnia values ("HAYB COFFEE", "Robert Borowski",12035.0);
+insert into palarnia values ("Johan and Nystrom","Johan Damgaard",15028.0);
+insert into palarnia values ("Hard Beans","Kasia Porada",11030.0);
+insert into palarnia values ("Etno Cafe","Łukasz Mrowiński",13783.0);
+insert into palarnia values ("LaCava","Artur Widera",12782.0);
+insert into palarnia values ("Coffeelab","Tomasz Wagner",13004.0);
+insert into palarnia values ("SIMPLo","Podeszwik Piotr",14072.0);
+insert into palarnia values ("Five Elephant","Kris Schakman",16926.0);
+insert into palarnia values ("The Barn","Ralf Ruller",15492.0);
+insert into palarnia values ("La Cabra","Esben Piper",14821.0);
