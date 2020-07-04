@@ -64,3 +64,36 @@ insert into palarnia values ("SIMPLo","Podeszwik Piotr",14072.0);
 insert into palarnia values ("Five Elephant","Kris Schakman",16926.0);
 insert into palarnia values ("The Barn","Ralf Ruller",15492.0);
 insert into palarnia values ("La Cabra","Esben Piper",14821.0);
+
+insert into wypalone values (1,12.0,"chemex","1",88,"brak","delikatne","duża","duża");
+insert into wypalone values (2,23.0,"drip/aeropress","1",86,"nieregularny kształ ziaren","delikatne","duża","duża");
+insert into wypalone values (3,18.0,"ekspres przelewowy","0",75,"nierówne wypalenie, ziarna z defektami","mocne","niska","duża");
+insert into wypalone values (4,21.0,"ekspres ciśnieniowy","0",72,"ziarna z defektami, możliwy efekt ziemniaka","mocne","duża","niska");
+insert into wypalone values (5,16.0,"drip/aeropress","1",84,"nieregularny kształt ziaren","delikatne","duża","duża");
+insert into wypalone values (6,17.0,"ekspres przelewowy","0",79,"nierówne wypalenie","mocne","niska","niska");
+insert into wypalone values (7,24.0,"ekspres ciśnieniowy","0",72,"ziarna z defektami","mocne","duża","niska");
+insert into wypalone values (8,21.0,"ekspres ciśnieniowy","0",74,"możliwy efekt ziemniaka","mocne","duża","duża");
+insert into wypalone values (9,15.0,"chemex","1",86,"brak","delikatne","duża","duża");
+insert into wypalone values (10,17.0,"ekspres ciśnieniowy","0",79,"ziarna z defektami","mocne","niska","duża");
+
+insert into palenie values ("LaCava",3,1,"jasne","washed",'2019-07-23');
+insert into palenie values ("Hard Beans",2,2,'jasne','honey','2019-08-01');
+insert into palenie values ("Coffeelab",5,3,'srednie','washed','2019-07-30');
+insert into palenie values ("The Barn",3,4,'ciemne','natural','2019-07-20');
+insert into palenie values ("SIMPLo",5,5,'jasne','washed','2019-09-02');
+insert into palenie values ("LaCava",1,6,'srednie','honey','2019-08-20');
+insert into palenie values ("Coffeelab",4,7,'ciemne','honey','2019-08-16');
+insert into palenie values ("Coffeelab",10,8,'ciemne','washed','2019-08-08');
+insert into palenie values ("HAYB COFFEE",10,9,'jasne','natural','2019-07-27');
+insert into palenie values ("La Cabra",4,10,'ciemne','natural','2019-07-25');
+
+insert into paczka values (1,3,0.25,35.50);
+insert into paczka values (2,2,0.5,75.0);
+insert into paczka values (3,7,0.25,31.50);
+insert into paczka values (4,2,0.5,73.0);
+insert into paczka values (5,6,1.0,119.0);
+insert into paczka values (6,6,0.25,30.5);
+insert into paczka values (7,3,0.25,41.0);
+insert into paczka values (8,4,0.5,83.0);
+insert into paczka values (9,7,0.5,61.0);
+insert into paczka values (10,3,1,125.0);
