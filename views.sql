@@ -16,7 +16,7 @@ where
 wlasciciel = user();
 
 create view moje_paczki as
-select p.id_p ID, z.kraj kraj, z.region region, p.waga waga, concat(p.cena, 'zł') cena, liczba
+select p.id_p ID, z.kraj kraj, z.region region, p.waga waga, cena, liczba
 from paczka p, moje_ziarna z
 where
 p.id_r = z.ID;

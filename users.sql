@@ -5,6 +5,7 @@ create role wlasciciel_palarni;
 grant select on roaster.moje_ziarna to wlasciciel_palarni;
 grant select on roaster.moja_palarnia to wlasciciel_palarni;
 grant select on roaster.moje_paczki to wlasciciel_palarni;
+grant execute on procedure sprzedaj to wlasciciel_palarni;
 
 -- dodawanie użytkowników
 drop user if exists roaster1@localhost;
