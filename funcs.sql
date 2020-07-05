@@ -20,5 +20,11 @@ values (
 ktore, jak_mocno, z_jaka_obrobka, now());
 end//
 
+create procedure pakuj(ktore int, ile_w_paczce double, ile_paczek int, za_ile double)
+begin
+update moje_ziarna set waga = (waga - ile_w_paczce * ile_paczek) where id = ktore;
+insert into paczka (id_r, waga, cena, liczba)
+values (ktore, ile_w_paczce, za_ile, ile_paczek);
+end//
 
 delimiter ;

@@ -30,7 +30,7 @@ default character set utf8 collate utf8_unicode_ci;
 create table wypalone
 (
 	id_r int unsigned not null auto_increment,
-	waga double not null,
+	waga double unsigned not null,
 	zalecana_metoda char(40),
 	jest_speciality enum ("1","0") not null,
 	punktacja float,
