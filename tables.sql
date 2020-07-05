@@ -48,6 +48,7 @@ create table paczka
 	id_r int unsigned not null,
 	waga double not null,
 	cena double,
+	liczba int unsigned not null,
 	primary key(id_p),
 	foreign key(id_r) references wypalone(id_r)
 )
