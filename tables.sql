@@ -11,7 +11,7 @@ default character set utf8 collate utf8_unicode_ci;
 create table ziarna
 (
 	id_z int unsigned not null auto_increment,
-	waga double not null,
+	waga double unsigned not null,
 	cena double not null,
 	wysokosc_upraw int,
 	primary key(id_z)
