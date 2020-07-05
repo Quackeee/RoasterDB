@@ -55,8 +55,8 @@ default character set utf8 collate utf8_unicode_ci;
 
 create table zbior
 (
-nazwa_farmy char(40) not null,
 id_z int unsigned not null,
+nazwa_farmy char(40) not null,
 data datetime not null,
 primary key (id_z),
 foreign key (nazwa_farmy) references farma(nazwa),
@@ -65,9 +65,9 @@ foreign key (id_z) references ziarna(id_z)
 default character set utf8 collate utf8_unicode_ci;
 
 create table palenie(
+id_r int unsigned not null,
 nazwa_palarni char(40) not null,
 id_z int unsigned not null,
-id_r int unsigned not null,
 stopien enum('jasne','średnie','ciemne'),
 obrobka enum('washed','natural','honey'),
 data datetime,
